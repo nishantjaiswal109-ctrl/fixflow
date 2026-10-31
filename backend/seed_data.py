@@ -3,6 +3,13 @@ Provides pre-configured demo users, diverse campus issues across all 8 categorie
 activity logs, and realistic duplicate pairs to immediately demonstrate NLP detection.
 """
 
+import os
+import sys
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
+
 from datetime import datetime, timedelta, timezone
 from sqlalchemy.orm import Session
 from database import engine, SessionLocal, Base
