@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import {
   Wrench,
-  ShieldAlert,
-  UserCheck,
   LogOut,
   PlusCircle,
   BarChart3,
@@ -18,13 +16,11 @@ import {
 interface Props {
   currentTab: string;
   setCurrentTab: (tab: string) => void;
-  onOpenReportModal?: () => void;
 }
 
 export const Navbar: React.FC<Props> = ({
   currentTab,
   setCurrentTab,
-  onOpenReportModal,
 }) => {
   const { user, logout, quickLoginDemo } = useAuth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -255,7 +251,7 @@ export const Navbar: React.FC<Props> = ({
                   <div className="text-sm font-semibold text-white flex items-center gap-1.5 justify-end">
                     <span>{user.name}</span>
                     <span
-                      className={`text-[10px] px-1.5 py-0.2 rounded font-bold uppercase ${
+                      className={`text-[10px] px-1.5 py-0.5 rounded font-bold uppercase ${
                         user.role === 'admin'
                           ? 'bg-purple-500/20 text-purple-300 border border-purple-500/30'
                           : 'bg-emerald-500/20 text-emerald-300 border border-emerald-500/30'

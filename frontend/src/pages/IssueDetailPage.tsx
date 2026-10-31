@@ -417,7 +417,7 @@ export const IssueDetailPage: React.FC<Props> = ({ reportId, onNav }) => {
                   >
                     <div className="flex items-center justify-between mb-1">
                       <span className="font-bold text-blue-700">{dup.matching_report_id}</span>
-                      <span className="font-bold text-amber-800 bg-amber-100 px-1.5 py-0.2 rounded">
+                      <span className="font-bold text-amber-800 bg-amber-100 px-1.5 py-0.5 rounded">
                         {dup.similarity_score}% Match
                       </span>
                     </div>

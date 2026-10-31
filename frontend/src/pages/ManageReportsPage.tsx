@@ -276,7 +276,7 @@ export const ManageReportsPage: React.FC<Props> = ({ onNav }) => {
                         <span>{rep.category}</span>
                       </div>
                       {rep.duplicate_count ? (
-                        <span className="inline-flex items-center gap-1 text-[10px] font-bold text-amber-700 bg-amber-100 px-1.5 py-0.2 rounded mt-1">
+                        <span className="inline-flex items-center gap-1 text-[10px] font-bold text-amber-700 bg-amber-100 px-1.5 py-0.5 rounded mt-1">
                           <CopyCheck className="w-3 h-3" />
                           <span>{rep.duplicate_count} Dup</span>
                         </span>
