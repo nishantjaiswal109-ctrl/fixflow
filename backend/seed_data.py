@@ -15,7 +15,7 @@ from sqlalchemy.orm import Session
 from database import engine, SessionLocal, Base
 import models
 from auth import hash_password
-from ai_engine import calculate_priority_score, calculate_duplicate_similarity
+from ai_engine import calculate_priority_score
 
 
 def utcnow():

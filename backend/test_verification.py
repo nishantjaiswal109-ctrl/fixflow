@@ -2,7 +2,6 @@
 Tests all 14 requirements defined in Part 7 of the Master Prompt.
 """
 
-import sys
 import json
 import urllib.request
 import urllib.error

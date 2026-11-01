@@ -7,13 +7,13 @@ if BASE_DIR not in sys.path:
 
 import random
 import uuid
-from datetime import datetime, timezone, timedelta
-from typing import Optional, List
+from datetime import datetime, timezone
+from typing import Optional
 from fastapi import FastAPI, Depends, HTTPException, status, UploadFile, File, Form, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from sqlalchemy.orm import Session
-from sqlalchemy import func, desc, or_
+from sqlalchemy import desc, or_
 
 from database import engine, Base, get_db
 import models
